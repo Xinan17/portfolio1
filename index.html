@@ -6,8 +6,19 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("FwQoRKvTNvMAhAdJz");
+    })();
+    </script>
+    
 
     <!-- mobile specific metas
     ================================================== -->
@@ -56,8 +67,8 @@
 
             <ul class="header-social">
                 <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/sinaan.17?igsh=YTdwb2wxc2hlaWRl"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://wa.me/qr/GALIDDTJLI6PD1"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
                 <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
 
 
@@ -392,6 +403,10 @@ x
 
     <!-- contact
     ================================================== -->
+
+     
+
+
     <section id="contact" class="s-contact ss-dark target-section">
 
         <div class="row heading-block" data-aos="fade-up">
@@ -413,6 +428,25 @@ x
                 </p>
             </div>
         </div>
+        <div class="container border mt-3 bg-light">
+            <div class="row"> 
+            <div class="col-12 py-3">
+                <h1>CONTACT</h1>
+                <div class="form-group">
+                    <h5 for="name">NAME</h5>
+                    <input type="text" class="form-control" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <h5 for="email">EMAIL</h5>
+                    <input type="email" class="form-control" id="email" placeholder="enter your email">
+                </div>
+                <div class="form-group">
+                    <h5 for="message">MESSAGE ME</h5>
+                    <textarea name="" id="message" rows="4" class="form-group bg-warning"></textarea></div>
+                </div>
+            <button class="btn btn-success" onclick="sentMail()">SUBMIT</button>
+            </div>
+        </div>
 
         <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
 
@@ -421,17 +455,7 @@ x
                 <a href="tel:8921735803">+8921735803</a>
             </div>
 
-            <div class="column large-7 medium-full contact-social">
-                <h4>Social</h4>
-                <ul>
-                    <li><a href="#0" title="Facebook">Facebook</a></li>
-                    <li><a href="#0" title="Whatsapp">Whatsapp</a></li>
-                    <li><a href="#0" title="Instagram">Instagram</a></li>
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
+            
     </section> <!-- end s-contact -->
 
 
